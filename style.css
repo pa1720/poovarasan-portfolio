@@ -15,58 +15,6 @@ h1, h2, h3 {
 a { color: #7aa2ff; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.typing-text span{
-    position: relative;
-}
-
-.typing-text span::before{
-    content: "software Developer";
-    color: #52d1b2;
-    animation: words 20s infinite;
-}
-
-.typing-text span::after{
-    content: "";
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 110%;
-    border-left: 3px solid rgba(0, 0, 0, 0);
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
-
-@keyframes cursor{
-    to{
-        border-left: 3px solid #52d1b2;
-    }
-}
-
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
-    }
-    21%, 40%{
-        content: "App Developer";
-    }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Graphic Designer";
-    }
-    81%, 100%{
-        content: "3D Modeler";
-    }
-}
-
 .kk {
   text-decoration: none;
 }
